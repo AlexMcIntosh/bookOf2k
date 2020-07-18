@@ -1,9 +1,4 @@
-$primary: #e84a5f;
-$secondary: #fecea8;
-$accent: #ff847c;
-$alternate: #99b898;
-$black: #2a363b;
-$gray: #adb5bd;
+@import '../../../assets/styles/variables.scss';
 
 .container {
   display: grid;
@@ -27,7 +22,7 @@ $gray: #adb5bd;
   font-size: 1.5em;
   padding: 1em;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 1em;
   text-align: center;
   
   .title {
@@ -39,6 +34,5 @@ $gray: #adb5bd;
 .fluid-grid {
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* This is better for small screens, once min() is better supported */
-    /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-    grid-gap: 1rem;}
+    grid-gap: 1rem;
+}
