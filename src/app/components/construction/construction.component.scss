@@ -4,7 +4,7 @@
   display: grid;
   height: 100vh;
   place-items: center;
-  background-color: $accent;
+  background-color: $primary;
 }
 
 .banner {
@@ -12,7 +12,7 @@
   width: 100%;
   display: grid;
   place-items: center;
-  background-color: $black;
+  background-color: $secondary;
   padding: 50px 0;
 }
 
@@ -25,9 +25,14 @@
   grid-gap: 1em;
   text-align: center;
   
-  .title {
+  .title, .subtitle {
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 900;
+  }
+
+  .subtitle {
+    font-weight: 300;
   }
 }
 

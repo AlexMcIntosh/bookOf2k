@@ -1,4 +1,60 @@
+$bookOf2k-primary-color: (
+  50 : #fdecef,
+  100 : #fbd0d4,
+  200 : #e99f9f,
+  300 : #de7c7a,
+  400 : #e7605a,
+  500 : #eb5443,
+  600 : #dd4b41,
+  700 : #cb423b,
+  800 : #be3d34,
+  900 : #ad352a,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
 
+$bookOf2k-secondary-color: (
+  50 : #edf0f1,
+  100 : #d1dadd,
+  200 : #b3c1c7,
+  300 : #94a8b0,
+  400 : #7c949f,
+  500 : #64828e,
+  600 : #58737d,
+  700 : #495e67,
+  800 : #3b4b52,
+  900 : #2a363b,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
@@ -12,8 +68,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$bookOf2k-primary: mat-palette($mat-indigo);
-$bookOf2k-accent: mat-palette($mat-pink, A200, A100, A400);
+$bookOf2k-primary: mat-palette($bookOf2k-primary-color, 600, 400, 900);
+$bookOf2k-accent: mat-palette($bookOf2k-secondary-color, 900, 700, A400);
 
 // The warn palette is optional (defaults to red).
 $bookOf2k-warn: mat-palette($mat-red);

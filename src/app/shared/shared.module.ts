@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NavigationComponent } from './navigation/navigation.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NavigationComponent],
@@ -11,10 +12,14 @@ import { NavigationComponent } from './navigation/navigation.component';
     CommonModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   exports: [
-    NavigationComponent
+    NavigationComponent,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule { }

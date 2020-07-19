@@ -1,3 +1,16 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+  .navbar {
+      justify-content: space-between;
+      
+      .links {
+          display: flex;
+          justify-content: end;
+
+          a {
+              margin-left: 10px;
+          }
+      }
+  }
